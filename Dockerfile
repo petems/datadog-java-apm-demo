@@ -7,4 +7,6 @@ COPY src src
 COPY pom.xml .
 RUN mvn clean install
 
+RUN apk add curl
+
 ENTRYPOINT ["java", "-jar", "target/datadogjavaapmdemo-0.0.1-SNAPSHOT.jar"]
