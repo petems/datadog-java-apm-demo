@@ -3,7 +3,7 @@
 
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
-            <JsonLayout complete="true" compact="true" eventEol="true"  includeStacktrace="true" objectMessageAsJsonObject="true" >
+            <JsonLayout complete="false" compact="true" eventEol="true"  includeStacktrace="true" objectMessageAsJsonObject="true" >
                 <KeyValuePair key="timeMillis" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
             </JsonLayout>
         </Console>
